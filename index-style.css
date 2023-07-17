@@ -21,6 +21,7 @@ body {
 .root {
     width: 100%;
     height: 720px;
+    min-height: 100vh;
 }
 nav {
     position: sticky;
@@ -85,39 +86,48 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+.hero-section{
+    display: flex;
+    justify-content: center;
+    height: 480px;
+}
 .hero-left {
-    width: 57%;
+    width: 38%;
     height: 472px;
     float: left;
+    /* margin-left: 168px; */
 }
 .intro-wish {
     font-family: Outfit;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 224px;
+    /* margin-left: 224px; */
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 56px;
+    padding-top: 80px;
+    text-align: center;
 }
 .hero-head-1 {
-    font-size: 106px;
+    font-size: 98px;
     font-family: Morganite;
     font-weight: 500;
     letter-spacing: 2px;
-    margin-left: 214px;
+    text-align: center;
+    /* margin-left: 214px; */
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 10px;
 }
 .hero-head-2 {
     font-family: Morganite;
-    font-size: 106px;
+    font-size: 98px;
     font-weight: 500;
+    text-align: center;
     letter-spacing: 4px;
     color: transparent;
     -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: black;
-    margin-left: 262px;
+    /* margin-left: 262px; */
     margin-bottom: 0;
     margin-top: -8px;
     /* padding-top: 10px; */
@@ -125,13 +135,15 @@ nav {
 
 .hero-btn {
     margin-top: 2px;
-    margin-left: 286px;
+    /* margin-left: 286px; */
+    display: flex;
+    justify-content: center;
 }
 
 .design-btn {
     width: 165px;
     height: 38px;
-    margin-right: 4px;
+    margin-right: 5px;
     font-size: 14px;
     font-weight: 600;
     font-family: Outfit;
@@ -153,7 +165,7 @@ nav {
 .resume-btn {
     width: 165px;
     height: 38px;
-    margin-left: 4px;
+    margin-left: 5px;
     font-size: 14px;
     font-weight: 600;
     font-family: Outfit;
@@ -173,7 +185,7 @@ nav {
 }
 
 .hero-right {
-    width: 43%;
+    width: 30%;
     height: 472px;
     /* background: saddlebrown; */
     float: left;
@@ -182,7 +194,7 @@ nav {
 .hero-img {
     width: 422px;
     height: 386px;
-    margin-top: 16px;
+    margin-top: 24px;
 }
 
 .footer {
@@ -231,7 +243,302 @@ nav {
         padding-top:6px;
     }
 } */
-@media screen and (max-width: 768px) {
+
+
+/* laptop */
+@media screen and (max-width : 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        min-height: 100%;
+        /* background: cyan; */
+    }
+    .logo-img{
+        width: 128px;
+        height: 22px;
+    }
+    .nav-links a{
+        font-size: 12px;
+    }
+    .hero-section{
+        height: 390px;
+    }
+    .hero-left{
+        width: 40%;
+        height: 472px;
+        float: left;
+        /* margin-left: 100px; */
+    }
+    .intro-wish{
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 500;
+        /* margin-left: 224px; */
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 56px;
+        text-align: center;
+    }
+    .hero-head-1 {
+        font-size: 80px;
+        font-family: Morganite;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        /* margin-left: 214px; */
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .hero-head-2 {
+        font-family: Morganite;
+        font-size: 80px;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 4px;
+        color: transparent;
+        -webkit-text-stroke-width: 2.5px;
+        -webkit-text-stroke-color: black;
+        /* margin-left: 262px; */
+        margin-bottom: 0;
+        margin-top: -8px;
+        /* padding-top: 10px; */
+    }
+    
+    .hero-btn {
+        margin-top: 2px;
+        /* margin-left: 286px; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .design-btn {
+        width: 148px;
+        height: 34px;
+        margin-right: 4px;
+        font-size: 12px;
+    }
+    .resume-btn{
+        width: 148px;
+        height: 34px;
+        font-size: 12px;
+    }
+    .hero-img{
+        width: 332px;
+        height: 305px;
+    }
+    .running-txt{
+        font-size: 26px;
+    }
+}
+
+
+/* tablet */
+@media  screen and (max-width : 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    button{
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        height:auto!important;
+        min-height:100vh;
+    }
+    /* .logo {
+        display: flex;
+        flex-direction: column;
+        width: 165px;
+        height: 18px;
+    } */
+    .logo-img {
+        width: 165px;
+        height: 18px;
+        margin-left: 28px;
+        /* margin-top: 21px;
+        margin-left: 14px; */
+    }
+    .home{
+        width: 165px;
+        height: 18px;
+        margin-top: -18px;
+        margin-left: 28px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        /* display: flex;
+        justify-content: space-between; */
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+        }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        min-height: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        line-height: 5;
+        background-color: #FFAE17;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-items: center;
+        align-content: center;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links a{
+        font-weight: bold;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 28px;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        height: 754px;
+    }
+    .hero-left{
+        width: 100%;
+        height: 334px;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+        justify-content: center;
+    }
+    .intro-wish{
+        font-size: 16px;
+        color: black;
+        font-family: Outfit;
+        margin: 0;
+        padding-top: 18px;
+        text-align: center;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .hero-left h1{
+        font-size: 84px;
+        letter-spacing: 2px;
+        font-family: Morganite;
+        font-weight: bold;
+        margin: 0;
+        padding-top:6px;
+    }
+    .hero-head-2{
+        color: transparent;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-top: 2px;
+    }
+    .hero-btn{
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        z-index: 1;
+    }
+    .design-btn{
+        width: 140px;
+        height: 32px;
+        margin-bottom: 4px;
+        font-size: 12px;
+        font-family: Outfit;
+        font-weight: 600;
+        color: black;
+        background: #FFAE17;
+        border: transparent;
+        border-radius: 30px;
+        position: relative;
+        transition: 0.35s ease-in-out;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .design-btn:hover{
+        background: #ffff;
+        color: #000000;
+        border: 2px solid #FFAE17;
+        transform: scale(1.05);
+    }
+    .resume-btn{
+        width: 140px;
+        height: 32px;
+        margin-top: 4px;
+        font-size: 12px;
+        font-family: Outfit;
+        font-weight: 600;
+        color: black;
+        background: transparent;
+        border: 2px solid #FFAE17;
+        border-radius: 30px;
+        position: relative;
+        transition: 0.35s ease-in-out;
+        cursor: pointer;
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+    }
+    .hero-right{
+        width: 100%;
+        /* height: 282px; */
+        display: flex;
+       justify-content: center;
+    }
+    .hero-img{
+        width: 440px;
+        height: 404px;
+        margin: 0;
+        padding: 0;
+        padding-top: 8px;
+    }
+    .footer{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .running-txt{
+        font-family: Morganite;
+        text-align: center;
+        background: #000;
+        font-size:  16px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: #ffff;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
     }
@@ -309,6 +616,7 @@ nav {
 
     .hero-section{
         flex-direction: column;
+        height: 564px;
     }
     .hero-left{
         width: 100%;
