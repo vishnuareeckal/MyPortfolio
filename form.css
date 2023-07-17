@@ -1,0 +1,135 @@
+@font-face{
+    font-family: Outfit;
+    src:url(Outfit-Regular.ttf)
+}
+@font-face{
+    font-family: Morganite;
+    src:url(Morganite-Medium.ttf)
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    background: #ffff;
+}
+.form{
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .popup-container{
+    width: 888px;
+    height: 501px;
+    display: flex;
+} */
+.popup{
+    width: 888px;
+    height: 501px;
+    border-radius: 30px 30px 30px 30px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.popup-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.form-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px 0px 30px;
+}
+.popup-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-radius: 0px 30px 30px 0px;
+}
+.form-head{
+    font-family: Morganite;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 32px;
+    margin-top: 12px;
+}
+.form-description{
+    width: 358px;
+    height: 220px;
+    background: #d4d4d4;
+    border-radius: 8px ;
+    border: transparent;
+    margin-left: 30px;
+    margin-top: 6px;
+    color: #000000;
+    padding-left: 26px;
+    padding-top: 12px;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 14px;
+}
+textarea{
+    resize: none;
+}
+.form-email{
+    width: 358px;
+    height: 56px;
+    background: #d4d4d4;
+    border-radius: 8px ;
+    border: transparent;
+    margin-left: 30px;
+    margin-top: 8px;
+    color: #000000;
+    padding-left: 26px;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 14px;
+}
+.form-phone{
+    width: 358px;
+    height: 56px;
+    background: #d4d4d4;
+    border-radius: 8px ;
+    border: transparent;
+    margin-left: 30px;
+    margin-top: 8px;
+    color: #000000;
+    padding-left: 26px;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 14px;
+}
+.form-submit{
+    width: 165px;
+    height: 38px;
+    margin-top: 12px;
+    margin-left: 138px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Outfit;
+    background: #FFAE17;
+    border: transparent;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.35s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.form-submit:hover{
+    background: #ffff;
+    color: #000000;
+    border: 2px solid #FFAE17;
+    transform: scale(1.05);
+}

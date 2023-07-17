@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vishnu areeckal</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <div class="root">
+        <nav>
+            <div class="logo">
+                <img class="logo-img" src="https://i.ibb.co/6BZvjJ2/my-logo-black.png" alt="">
+                <a class="home" href="https://vishnuareeckal.github.io/MyPortfolio.github.io/"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-left">
+                <h4 class="intro-wish">👋, my name is Vishnu and I am looking for new projects</h4>
+                <h1 class="hero-head-1">FRONTEND DEVELOPER &</h1>
+                <h1 class="hero-head-2">UI/UX DESIGNER</h1>
+                <div class="hero-btn">
+                    <button type="button" class="design-btn"  onclick="window.location.href='https://vishnuareeckal.github.io/form/'">DESIGN WITH ME</button>
+                    <button type="button" class="resume-btn">DOWNLOAD RESUME</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <!-- <img class="hero-img" src="/Images/hero-img.png" alt=""> -->
+                <img class="hero-img" src="https://i.ibb.co/s65MNH9/hero-img.png" alt="">
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="running">
+                    <h2 class="running-txt">UNVEIL THE DEPTHS WITHIN: DISCOVER MORE ABOUT 'ME</h2>
+            </div>
+            <div class="footer-section">
+
+            </div>
+        </div>
+    </div>
+    <script>
+    function navSlide(){
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    burger.addEventListener("click", () =>{
+        nav.classList.toggle("nav-active");
+
+        navLinks.forEach((link, index) =>{
+            if(link.style.animation){
+                link.style.animation = ""
+            }
+            else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
+
+        burger.classList.toggle("toggle");
+    });
+}
+navSlide();
+    </script>
+</body>
+</html>
