@@ -32,6 +32,7 @@ nav {
     min-height: 14px;
     font-family: Outfit;
     padding-top: 24px;
+    z-index: 2;
 }
 .logo {
     display: flex;

@@ -33,6 +33,7 @@ nav {
     min-height: 14px;
     font-family: Outfit;
     padding-top: 24px;
+    z-index: 2;
 }
 .logo {
     display: flex;
@@ -276,6 +277,7 @@ nav {
         min-height: 14px;
         font-family: Outfit;
         padding-top: 24px;
+        z-index: 2;
         }
     .nav-links {
         position: fixed;
@@ -351,7 +353,7 @@ nav {
         align-items: center;
         justify-content: center;
         align-content: center;
-        z-index: -1;
+        z-index: 1;
     }
     .design-btn{
         width: 140px;
