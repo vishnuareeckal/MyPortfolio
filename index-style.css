@@ -89,7 +89,7 @@ nav {
 .hero-section{
     display: flex;
     justify-content: center;
-    height: 480px;
+    /* height: 480px; */
 }
 .hero-left {
     width: 38%;
@@ -262,9 +262,6 @@ nav {
     .nav-links a{
         font-size: 12px;
     }
-    .hero-section{
-        height: 390px;
-    }
     .hero-left{
         width: 40%;
         height: 472px;
@@ -414,7 +411,7 @@ nav {
 
     .hero-section{
         flex-direction: column;
-        height: 754px;
+        /* height: 754px; */
     }
     .hero-left{
         width: 100%;
@@ -616,7 +613,7 @@ nav {
 
     .hero-section{
         flex-direction: column;
-        height: 600px;
+        /* height: 600px; */
     }
     .hero-left{
         width: 100%;
