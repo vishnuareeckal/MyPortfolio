@@ -19,7 +19,7 @@ body{
 }
 .root{
     width: 100%;
-    height: 636px;
+    /* height: 636px; */
 }
 nav {
     position: sticky;
@@ -84,6 +84,7 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+
 .content{
     width: 100%;
     height: 390px;
@@ -92,18 +93,23 @@ nav {
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .content-inner{
     width: 72%;
-    height: 474px;
+    height: 100%;
     margin: 0;
     padding: 0;
     float: left;
 }
 .left-box{
-    width: 50%;
-    height: 474px;
+    width: 60%;
+    height: 100%;
+    display: flex;
     float: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .left-box h2{
     margin: 0;
@@ -154,41 +160,39 @@ nav {
     font-weight: 600;
 }
 .social{
-    width: 100%;
-    height: 80px;
+    width: 230px;
+    height: 36px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 8px;
 }
-.social a{
-    margin: 0;
-    padding: 0;
-}
-.fb-img{
-    width: 45px;
-    height: 45px;
-    margin-right: 8px;
+.fa-facebook{
     cursor: pointer;
+    font-size: 29px;
+    color: 	#4267B2;
 }
-.twitter-img{
-    width: 47px;
-    height: 47px;
-    margin-right: 8px;
-    margin-left: 8px;
+.fa-square-x-twitter{
     cursor: pointer;
+    font-size: 28px;
 }
-.linkedin-img{
-    width: 45px;
-    height: 45px;
-    margin-left: 8px;
+.fa-google{
     cursor: pointer;
+    font-size: 26px;
+    color: #DB4437;
+}
+.fa-linkedin{
+    cursor: pointer;
+    font-size: 28px;
+    color: #0072b1;
 }
 .right-box{
-    width: 50%;
-    height: 474px;
+    width: 40%;
+    height: 100%;
     float: left;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-img{
@@ -208,26 +212,278 @@ nav {
     float: left;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .footer-left-box h4{
     font-family: Outfit;
     font-weight: 500;
     font-size: 20px;
-    margin-left: 180px;
 }
 .footer-right-box{
     width: 50%;
     height: 100%;
     float: left;
-    display: flex;
+    display: grid;
     align-items: center;
 }
-.footer-nav a{
+.footer-right-box li{
+    list-style: none;
+}
+.footer a{
     float: left;
-    padding: 12px;
+    text-decoration: none;
     text-align: center; /*If you want the text to be centered*/
+}
+.links{
+    font-family: Outfit;
+    list-style: none;
+    padding-left: 20px;
+}
+.footer-right-box a{
+    text-decoration: none;
+    width: 20%;
 }
 .footer a:hover{
     margin: 0;
     color: blue;
+}
+
+
+
+@media screen and (max-width : 850px) {
+    .left-box p{
+        font-size: 16px;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    button{
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        height:auto!important;
+        min-height:100vh;
+    }
+    .logo-img {
+        width: 165px;
+        height: 18px;
+        margin-left: 28px;
+        /* margin-top: 21px;
+        margin-left: 14px; */
+    }
+    .home{
+        width: 165px;
+        height: 18px;
+        margin-top: -18px;
+        margin-left: 28px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        /* display: flex;
+        justify-content: space-between; */
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+        }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        min-height: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        line-height: 5;
+        background-color: #FFAE17;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-items: center;
+        align-content: center;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links a{
+        font-weight: bold;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 28px;
+    }
+    .contact-img{
+        width: 275px;
+        height: 275px;
+        margin-left: 20px;
+    }
+
+
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    button{
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        height:auto!important;
+        min-height:100vh;
+    }
+    nav {
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-img {
+        width: 165px;
+        height: 18px;
+        margin-left: 20px;
+        /* margin-top: 21px;
+        margin-left: 14px; */
+    }
+    .home{
+        width: 165px;
+        height: 18px;
+        margin-top: -18px;
+        margin-left: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+        }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        min-height: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        line-height: 5;
+        background-color: #FFAE17;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-items: center;
+        align-content: center;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links a{
+        font-weight: bold;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .content{
+        height: 100%;
+        flex-direction: column;
+    }
+    .content-inner{
+        width: 90%;
+    }
+    .left-box{
+        width: 100%;
+        height: 37%;
+    }
+    .left-box h2{
+        font-size: 44px;
+    }
+    .left-box p{
+        width: 85%;
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    .ig-flw-btn{
+        font-size: 10px;
+        width: 190px;
+        height: 30px;
+    }
+    .right-box{
+        width: 100%;
+        height: 40%;
+    }
+    .contact-img{
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .footer{
+        height: 65px;
+    }
+    .footer-left-box h4{
+        font-size: 10px;
+    }
+    .links{
+        font-size: 8px;
+    }
+}
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }

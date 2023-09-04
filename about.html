@@ -48,27 +48,26 @@
                     <div class="box-1">
                         <img class="figma-logo" src="https://i.ibb.co/gTp6tZN/figma-logo-1.png" alt="">
                         <h3>Unlock the next level designs</h3>
-                        <p>Crafting intuitive and visually<br>captivating user interfaces that
-                            <br>seamlessly guide and engage<br>users in a delightful digital
-                            <br>experience.</p>
+                        <p>Crafting intuitive and visually captivating user interfaces that seamlessly guide 
+                            and engage users in a delightful digital experience.</p>
                     </div>
                     <div class="box-2">
                         <img class="html-logo" src="https://i.ibb.co/5ktkpH0/html-logo.png" alt="">
-                        <h3>Designing Responsive Webpages<br>Tailored Just for You</h3>
-                        <p>Experience the digital frontier with our dynamic webpages,<br>
-                            where innovation meets<br>functionality to create a<br>captivating online presence.</p>
+                        <h3>Designing Responsive Webpages Tailored Just for You</h3>
+                        <p>Experience the digital frontier with out dynamic webpages, where innovation
+                            meets functionality to create a captivating online presence.</p>
                     </div>
                     <div class="box-3">
                         <img class="ae-logo" src="https://i.ibb.co/wCkhVT2/ae-logo.png" alt="">
                         <h3>Things with motion</h3>
-                        <p>Elevate your video production to<br>new heights with seamless and<br>
-                            captivating visual effects crafted<br>through expert editing in Adobe<br>After Effects.</p>
+                            <p>Elevate your video production to new heights with seamless and captivating visual effects
+                                through expert editing in Adobe After Effects.</p>
                     </div>
                     <div class="box-4">
                         <img class="ps-logo" src="https://i.ibb.co/rc7yggB/ps-lr-logo.png" alt="">
                         <h3>Playful Photo Magic</h3>
-                        <p>Transforming ordinary moments into extraordinary memories<br>through skilful and artistic photo<br>
-                            edits that evoke emotion and<br>capture the essence of the<br>subject.</p>
+                        <p>Transforming ordinary moments into extraordinary memories through skilful
+                            and artistic photo edits that evoke emotion and capture the essence of the subject.</p>
                     </div>
                 </div>
             </div>
@@ -91,18 +90,39 @@
             </div>
             <div class="footer">
                 <div class="footer-left-box">
-                    <h4>👋, Webpage designed by Vishnu</h4>
+                    <h4><center>👋, Webpage designed by Vishnu</center></h4>
                 </div>
                 <div class="footer-right-box">
-                    <div class="footer-nav">
-                        <ul>
-                            <li><a href="design.html">DESIGN</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="">TERMS OF USE</a></li>
-                        </ul>
-                    </div>
+                    <ul class="links">
+                        <li><a href="design.html">DESIGN</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="">TERMS OF USE</a></li>
+                    </ul>
                 </div>
             </div>
     </div>
+    <script>
+        function navSlide() {
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector(".nav-links");
+            const navLinks = document.querySelectorAll(".nav-links li");
+
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = ""
+                    }
+                    else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+
+                burger.classList.toggle("toggle");
+            });
+        }
+        navSlide();
+    </script>
 </body>
 </html>

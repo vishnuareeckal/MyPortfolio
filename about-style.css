@@ -8,8 +8,10 @@
 }
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 body{
+    height: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -19,7 +21,7 @@ body{
 }
 .root{
     width: 100%;
-    height: 2008px;
+    min-height: 100%;
 }
 nav {
     position: sticky;
@@ -88,6 +90,10 @@ nav {
     width: 100%;
     height: 300px;
     float: left;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .intro-wish{
     font-family: Outfit;
@@ -113,9 +119,8 @@ nav {
     font-size: 18px;
     font-family: Outfit;
     /* width: 62%; */
+    width: 74%;
     margin-top: 42px;
-    margin-left: 188px;
-    margin-right: 188px;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -132,16 +137,26 @@ p{
     width: 100%;
     height: 930px;
     float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service-section-top{
-    margin-left: 188px;
     width: 72%;
-    height: 90px;  
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 12px;
 }
 .service-top-left{
     width: 70%;
     height: 100%;
     float: left;
+    display: flex;
+    align-items: center;
 }
 .service-top-right{
     width: 30%;
@@ -158,7 +173,6 @@ p{
     color: #000;
     font-weight: 500;
     letter-spacing: 1px;
-    padding-top: 18px;
 }
 .project-btn{
     width: 165px;
@@ -172,13 +186,11 @@ p{
     border: transparent;
     border-radius: 8px;
     position: relative;
-    margin-right: 4px;
     transition: 0.35s ease-in-out;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
 }
 .project-btn:hover{
     background: #ffff;
@@ -191,18 +203,18 @@ p{
     float: left;
     width: 72%;
     height: 840px;
-    margin-left: 188px;
-    background: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 .box-1{
     width: 328px;
     height: 345px;
-    /* background: orchid; */
     float: left;
-    margin-right: 59px;
-    margin-bottom: 40px;
-    margin-top: 34px;
-    margin-left: 100px;
     border-radius: 30px ;
     border: 3px solid #FFAE17;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -211,9 +223,6 @@ p{
     width: 328px;
     height: 345px;
     float: left;
-    margin-left: 59px;
-    margin-bottom: 40px;
-    margin-top: 34px;
     border-radius: 30px ;
     border: 3px solid #FFAE17;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -222,9 +231,6 @@ p{
     width: 328px;
     height: 345px;
     float: left;
-    margin-right: 59px;
-    margin-top: 40px;
-    margin-left: 100px;
     border-radius: 30px ;
     border: 3px solid #FFAE17;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -233,8 +239,6 @@ p{
     width: 328px;
     height: 345px;
     float: left;
-    margin-left: 59px;
-    margin-top: 40px;
     border-radius: 30px ;
     border: 3px solid #FFAE17;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -253,7 +257,7 @@ p{
     margin: 0;
     padding: 0;
     margin-left: 28px;
-    margin-top: 32px;   
+    margin-top: 32px;
 }
 .ae-logo{
     width: 60px;
@@ -321,41 +325,45 @@ p{
     font-family: Outfit;
     font-size: 18px;
     font-weight: 500;
-    text-align: left ;
+    text-align: left;
     margin: 0;
     padding: 0;
     margin-top: 12px;
     margin-left: 28px;
+    margin-right: 5px;
 }
 .box-2 p{
     font-family: Outfit;
     font-size: 18px;
     font-weight: 500;
-    text-align: left ;
+    text-align: left;
     margin: 0;
     padding: 0;
     margin-top: 12px;
     margin-left: 28px;
+    margin-right: 5px;
 }
 .box-3 p{
     font-family: Outfit;
     font-size: 18px;
     font-weight: 500;
-    text-align: left ;
+    text-align: left;
     margin: 0;
     padding: 0;
     margin-top: 12px;
     margin-left: 28px;
+    margin-right: 5px;
 }
 .box-4 p{
     font-family: Outfit;
     font-size: 18px;
     font-weight: 500;
-    text-align: left ;
+    text-align: left;
     margin: 0;
     padding: 0;
     margin-top: 12px;
     margin-left: 28px;
+    margin-right: 5px;
 }
 .interest-section{
     width: 100%;
@@ -363,6 +371,9 @@ p{
     float: left;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .interest-section h2{
     margin: 0;
@@ -373,16 +384,16 @@ p{
     font-weight: 500;
     letter-spacing: 1px;
     padding-top: 18px;
-    margin-left: 188px;
 }
 .cards{
     width: 72%;
     height: 400px;
     float: left;
-    margin-left: 188px;
+    /* margin-left: 188px; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
 }
 .card-1{
     width: 255px;
@@ -434,7 +445,6 @@ p{
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
-    margin-left: 28px;
     margin-top: 4px;
     position: static;
 }
@@ -451,26 +461,635 @@ p{
     float: left;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .footer-left-box h4{
     font-family: Outfit;
     font-weight: 500;
     font-size: 20px;
-    margin-left: 180px;
 }
 .footer-right-box{
     width: 50%;
     height: 100%;
     float: left;
-    display: flex;
+    display: grid;
     align-items: center;
 }
-.footer-nav a{
+.footer-right-box li{
+    list-style: none;
+}
+.footer a{
     float: left;
-    padding: 12px;
+    text-decoration: none;
     text-align: center; /*If you want the text to be centered*/
+}
+.links{
+    width: 100%;
+    font-family: Outfit;
+    list-style: none;
+}
+.footer-right-box a{
+    text-decoration: none;
+    width: 20%;
 }
 .footer a:hover{
     margin: 0;
     color: blue;
+}
+
+
+@media screen and (min-width: 1950px) {
+    .service-section{
+        height: 472px;
+    }
+    .skill-box{
+        height: 380px;
+    }
+}
+/* laptop */
+@media screen and (max-width : 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        min-height: 100%;
+        /* background: cyan; */
+    }
+    .logo-img{
+        width: 128px;
+        height: 22px;
+    }
+    .nav-links a{
+        font-size: 12px;
+    }
+    .about-section{
+        height: 325px;
+    }
+    .box-1{
+        width: 250px;
+        height: 262px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .figma-logo{
+        height: 70px;
+        width: 70px;
+        margin-left: 2px;
+    }
+    .service-section{
+        height: 642px;
+    }
+    .skill-box{
+        height: 626px;
+    }
+    .skill-box h3{
+        font-size: 32px;
+        margin-left: 10px;
+    }
+    .skill-box p{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .box-2{
+        width: 250px;
+        height: 262px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .box-2 p{
+        margin-top: 0;
+    }
+    .box-3{
+        width: 250px;
+        height: 262px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .box-4{
+        width: 250px;
+        height: 262px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .interest-section{
+        height: 478px;
+    }
+    .cards{
+        height: 402px;
+    }
+    .card-1{
+        width: 232px;
+        height: 273px;
+    }
+    .card-2{
+        width: 232px;
+        height: 273px;
+    }
+    .card-3{
+        width: 232px;
+        height: 273px;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    button{
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        height:auto!important;
+        min-height:100vh;
+    }
+    .logo-img {
+        width: 165px;
+        height: 18px;
+        margin-left: 28px;
+        /* margin-top: 21px;
+        margin-left: 14px; */
+    }
+    .home{
+        width: 165px;
+        height: 18px;
+        margin-top: -18px;
+        margin-left: 28px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        /* display: flex;
+        justify-content: space-between; */
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+        }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        min-height: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        line-height: 5;
+        background-color: #FFAE17;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-items: center;
+        align-content: center;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links a{
+        font-weight: bold;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 28px;
+    }
+    .intro-wish{
+        font-size: 16px;
+    }
+    .about-head-1{
+        font-size: 80px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .about-head-1{
+        font-size: 54px;
+    }
+    .about-section{
+        height: 210px;
+    }
+    .text-box{
+        margin-top: 10px;
+    }
+    .service-section{
+        height: 580px;
+    }
+    .service-section-top h2{
+        font-size: 46px;
+    }
+    .skill-box{
+        height: 490px;
+    }
+    .box-1{
+        width: 185px;
+        height: 194px;
+        margin: 0;
+        padding: 0;
+        border-radius: 14px;
+    }
+    .box-1 h3{
+        font-size: 26px;
+        margin-left: 14px;
+    }
+    .box-1 p{
+        font-size: 12px;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .box-2{
+        width: 185px;
+        height: 194px;
+        margin: 0;
+        padding: 0;
+        border-radius: 14px;
+    }
+    .box-2 h3{
+        font-size: 26px;
+        margin-left: 14px;
+        margin-top: 2px;
+    }
+    .box-2 p{
+        font-size: 12px;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .box-3{
+        width: 185px;
+        height: 194px;
+        margin: 0;
+        padding: 0;
+        border-radius: 14px;
+    }
+    .box-3 h3{
+        font-size: 26px;
+        margin-left: 14px;
+        margin-top: 10px;
+    }
+    .box-3 p{
+        font-size: 12px;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .box-4{
+        width: 185px;
+        height: 194px;
+        margin: 0;
+        padding: 0;
+        border-radius: 14px;
+    }
+    .box-4 h3{
+        font-size: 26px;
+        margin-left: 14px;
+        margin-top: 10px;
+    }
+    .box-4 p{
+        font-size: 12px;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .figma-logo{
+        width: 65px;
+        height: 65px;
+    }
+    .html-logo{
+        width: 30px;
+        height: 30px;
+        margin-left: 14px;
+        margin-top: 20px;
+    }
+    .ae-logo{
+        width: 42px;
+        height: 42px;
+        margin-left: 20px;
+    }
+    .ps-logo{
+        width: 45px;
+        height: 35px;
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
+    button{
+        overflow-x: hidden;
+    }
+    .root{
+        width: 100%;
+        height:auto!important;
+        min-height:100vh;
+    }
+    nav {
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-img {
+        width: 165px;
+        height: 18px;
+        margin-left: 20px;
+        /* margin-top: 21px;
+        margin-left: 14px; */
+    }
+    .home{
+        width: 165px;
+        height: 18px;
+        margin-top: -18px;
+        margin-left: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        position: sticky;
+        background: #fff;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        min-height: 14px;
+        font-family: Outfit;
+        padding-top: 24px;
+        z-index: 2;
+        }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        min-height: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        line-height: 5;
+        background-color: #FFAE17;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-items: center;
+        align-content: center;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links a{
+        font-weight: bold;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .service-section{
+        height: 360px;
+    }
+    .service-section-top h2{
+        font-size: 30px;
+    }
+    .service-top-right button{
+        font-size: 12px;
+    }
+    .about-section{
+        height: 224px;
+    }
+    .service-section-top{
+        height: 50px;
+    }
+    .service-top-left{
+        width: 62%;
+    }
+    .service-top-right{
+        width: 38%;
+    }
+    .service-top-right button{
+        font-size: 8px;
+    }
+    .project-btn{
+        height: 26px;
+        width: 84%;
+        border-radius: 4px;
+    }
+    .skill-box{
+        height: 300px;
+    }
+    .box-1{
+        width: 120px;
+        height: 126px;
+        border-radius: 10px;
+    }
+    .box-1 h3{
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    .box-1 p{
+        font-size: 8px;
+        margin-left: 8px;
+        margin-top: 4px;
+    }
+    .figma-logo{
+        width: 40px;
+        height: 40px;
+    }
+    .box-2{
+        width: 120px;
+        height: 126px;
+        border-radius: 10px;
+    }
+    .box-2 h3{
+        font-size: 15px;
+        margin-left: 8px;
+        margin-top: 0;
+    }
+    .box-2 p{
+        font-size: 8px;
+        margin-left: 8px;
+        margin-top: 0;
+    }
+    .html-logo{
+        width: 20px;
+        height: 21px;
+        margin-top: 10px;
+    }
+    .box-3{
+        width: 120px;
+        height: 126px;
+        border-radius: 10px;
+    }
+    .box-3 h3{
+        font-size: 16px;
+        margin-left: 8px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .box-3 p{
+        font-size: 8px;
+        margin-left: 8px;
+        margin-top: 4px;
+    }
+    .ae-logo{
+        width: 30px;
+        height: 30px;
+        margin-left: 8px;
+        margin-top: 8px;
+    }
+    .box-4{
+        width: 120px;
+        height: 126px;
+        border-radius: 10px;
+    }
+    .box-4 h3{
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 8px;
+    }
+    .box-4 p{
+        font-size: 8px;
+        margin-left: 8px;
+        margin-top: 4px;
+    }
+    .ps-logo{
+        width: 28px;
+        height: 24px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    .interest-section{
+        height: 240px;
+    }
+    .interest-section h2{
+        font-size: 30px;
+    }
+    .cards{
+        height: 180px;
+    }
+    .card-1{
+        width: 90px;
+        height: 117px;
+    }
+    .card-2{
+        width: 90px;
+        height: 117px;
+    }
+    .card-3{
+        width: 90px;
+        height: 117px;
+    }
+    .cards h3{
+        font-size: 24px;
+    }
+    .card-1 img{
+        border-radius: 12px;
+    }
+    .card-2 img{
+        border-radius: 12px;
+    }
+    .card-3 img{
+        border-radius: 12px;
+    }
+
+    /* footer */
+    .footer{
+        height: 65px;
+    }
+    .footer-left-box h4{
+        font-size: 10px;
+    }
+    .links{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 378px) {
+    .box-1{
+        width: 110px;
+        height: 115px;
+    }
+    .box-1 h3{
+        font-size: 12px;
+    }
+    .box-1 p{
+        font-size: 7px;
+    }
+    .box-2{
+        width: 110px;
+        height: 115px;
+    }
+    .box-2 h3{
+        font-size: 12px;
+    }
+    .box-2 p{
+        font-size: 7px;
+    }
+    .box-3{
+        width: 110px;
+        height: 115px;
+    }
+    .box-3 h3{
+        font-size: 12px;
+    }
+    .box-3 p{
+        font-size: 7px;
+    }
+    .box-4{
+        width: 110px;
+        height: 115px;
+    }
+    .box-4 h3{
+        font-size: 12px;
+    }
+    .box-4 p{
+        font-size: 7px;
+    }
+}
+
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
