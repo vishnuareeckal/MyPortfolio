@@ -947,6 +947,9 @@ p{
     .card-1 button:hover{
         transform: scale(1);
     }
+    .card-1 .btn-stroke:hover{
+        transform: scale(1);
+    }
     .card-1 img{
         width: 107px;
         height: 76px;
@@ -967,6 +970,9 @@ p{
         justify-content: center;
     }
     .card-2 button:hover{
+        transform: scale(1);
+    }
+    .card-2 .btn-stroke:hover{
         transform: scale(1);
     }
     .card-2 img{
@@ -1002,6 +1008,9 @@ p{
         height: 16px;
         font-size: 6px;
     }
+    .card-3 .btn-stroke:hover{
+        transform: scale(1);
+    }
     .card-4{
         width: 125px;
         height: 118px;
@@ -1011,6 +1020,9 @@ p{
         justify-content: center;
     }
     .card-4 button:hover{
+        transform: scale(1);
+    }
+    .card-4 .btn-stroke:hover{
         transform: scale(1);
     }
     .card-4 img{
