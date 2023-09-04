@@ -918,6 +918,7 @@ p{
     .hero-head-2 {
         font-size: 58px;
         letter-spacing: 1px;
+        -webkit-text-stroke-width: 0.5px;
     }
     .design-btn {
         width: 194px;
