@@ -19,6 +19,10 @@ body{
     padding: 0;
     background: #ffff;
 }
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
 .root{
     width: 100%;
     min-height: 100%;
@@ -601,7 +605,7 @@ p{
         overflow-x: hidden;
     }
     .root{
-        width: 100%;
+        /* width: 100%; */
         height:auto!important;
         min-height:100vh;
     }
@@ -789,7 +793,7 @@ p{
         overflow-x: hidden;
     }
     .root{
-        width: 100%;
+        /* width: 100%; */
         height:auto!important;
         min-height:100vh;
     }

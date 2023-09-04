@@ -18,6 +18,10 @@ body {
     padding: 0;
     background: #ffff;
 }
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
 .root {
     width: 100%;
     min-height: 100vh;
@@ -813,6 +817,10 @@ p{
 
 /* mobile */
 @media screen and (max-width: 600px){
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
     body {
         overflow-x: hidden;
     }
@@ -820,7 +828,6 @@ p{
         overflow-x: hidden;
     }
     .root{
-        width: 100%;
         height:auto!important;
         min-height:100vh;
     }
