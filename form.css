@@ -6,130 +6,185 @@
     font-family: Morganite;
     src:url(Morganite-Medium.ttf)
 }
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0;
     padding: 0;
     background: #ffff;
 }
 .form{
     width: 100%;
-    height: 720px;
+    height: 620px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* .popup-container{
-    width: 888px;
-    height: 501px;
+.container{
+    width: 64%;
+    height: 85%;
     display: flex;
-} */
-.popup{
-    width: 888px;
-    height: 501px;
-    border-radius: 30px 30px 30px 30px;
-    float: left;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-                rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                rgba(0, 0, 0, 0.12) 0px 4px 6px,
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.popup-left{
+.left{
     width: 50%;
     height: 100%;
-    float: left;
+    background: transparent;
+    border-radius: 14px 0 0 14px;
 }
-.form-img{
+.left img{
     width: 100%;
     height: 100%;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 14px 0 0 14px;
+    object-fit: cover;
 }
-.popup-right{
+.right{
     width: 50%;
     height: 100%;
-    float: left;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0 14px 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.form-head{
+.text-box{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-box{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+}
+.text-box h3{
     font-family: Morganite;
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 42px;
+    letter-spacing: 1px;
+    font-weight: 400;
     margin: 0;
-    margin-left: 32px;
-    margin-top: 12px;
 }
-.form-description{
-    width: 358px;
+.text-box input{
+    width: 75%;
+    height: 44px;
+    padding: 0 0 0 8px;
+    border-radius: 8px;
+    margin-top: 6px;
+    background: #d4d4d4;
+    border: transparent;
+}
+.description{
+    width: 75%;
     height: 220px;
     background: #d4d4d4;
-    border-radius: 8px ;
-    border: transparent;
-    margin-left: 30px;
-    margin-top: 6px;
-    color: #000000;
-    padding-left: 26px;
+    border-radius: 8px;
+    padding-left: 8px;
     padding-top: 12px;
+    border: transparent;
+    color: #000000;
     font-family: Outfit;
     font-weight: 500;
     font-size: 14px;
-}
-textarea{
+    margin-top: 6px;
+    margin-bottom: 6px;
     resize: none;
 }
-.form-email{
-    width: 358px;
-    height: 56px;
-    background: #d4d4d4;
-    border-radius: 8px ;
-    border: transparent;
-    margin-left: 30px;
-    margin-top: 8px;
-    color: #000000;
-    padding-left: 26px;
+.submit-btn{
+    width: 140px;
+    height: 32px;
+    margin-bottom: 4px;
+    font-size: 12px;
     font-family: Outfit;
-    font-weight: 500;
-    font-size: 14px;
-}
-.form-phone{
-    width: 358px;
-    height: 56px;
-    background: #d4d4d4;
-    border-radius: 8px ;
-    border: transparent;
-    margin-left: 30px;
-    margin-top: 8px;
-    color: #000000;
-    padding-left: 26px;
-    font-family: Outfit;
-    font-weight: 500;
-    font-size: 14px;
-}
-.form-submit{
-    width: 165px;
-    height: 38px;
-    margin-top: 12px;
-    margin-left: 138px;
-    color: black;
-    font-size: 14px;
     font-weight: 600;
-    font-family: Outfit;
+    color: black;
     background: #FFAE17;
     border: transparent;
     border-radius: 30px;
     position: relative;
     transition: 0.35s ease-in-out;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
     letter-spacing: 1px;
 }
-.form-submit:hover{
+.submit-btn:hover{
     background: #ffff;
     color: #000000;
     border: 2px solid #FFAE17;
     transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width: 1200px){
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .text-box h3{
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .form{
+        min-height: 100vh;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        border-radius: 14px;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 768px){
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .container{
+        width: 80%;
+        height: 520px;
+    }
+    .text-box h3{
+        font-size: 32px;
+    }
+    .submit-btn:hover{
+        transform: scale(1);
+    }
+}
+/* mobile */
+@media screen and (max-width: 600px){
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .container{
+        width: 80%;
+        height: 520px;
+    }
+    .text-box h3{
+        font-size: 32px;
+    }
 }
