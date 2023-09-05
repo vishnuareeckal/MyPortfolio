@@ -605,7 +605,6 @@ p{
         overflow-x: hidden;
     }
     .root{
-        /* width: 100%; */
         height:auto!important;
         min-height:100vh;
     }
@@ -613,8 +612,6 @@ p{
         width: 165px;
         height: 18px;
         margin-left: 28px;
-        /* margin-top: 21px;
-        margin-left: 14px; */
     }
     .home{
         width: 165px;
@@ -631,8 +628,6 @@ p{
         background: #fff;
         top: 0;
         width: 100%;
-        /* display: flex;
-        justify-content: space-between; */
         align-items: center;
         min-height: 14px;
         font-family: Outfit;
